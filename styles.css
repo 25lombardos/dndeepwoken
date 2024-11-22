@@ -1,5 +1,5 @@
 /* CSS Reset */
-body, header, nav, main, div, p, h1, h2, ul, li {
+body, header, nav, main, div, p, h1, h2, h3, ul, li {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -13,7 +13,7 @@ html, body {
 body {
 	display: flex;
 	flex-direction: column;
-	background-color: #edd0b5;
+	background-color: #ecd3bb;
 }
 
 /* Header styles */
@@ -115,7 +115,23 @@ main {
 	align-items: center;
 }
 
+.justify {
+	text-align: justify;
+}
+
+.fade-heading {
+	mask-image: linear-gradient(270deg, transparent 60%, black);
+}
+
+.fade-text {
+	mask-image: linear-gradient(270deg, transparent 95%, black);
+}
+
 /* Home page content styles */
+#intro, #group {
+	margin: 0 3%;
+}
+
 #group {
 	background-color: #000;
 	flex: 1 2 30%;
@@ -123,12 +139,15 @@ main {
 
 #group img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+}
+
+#group p {
+	background-color: #fff;
 }
 
 #intro {
 	flex: 2 1 60%;
-	margin: 0 2%;
 }
 
 #intro h2 {
@@ -136,14 +155,62 @@ main {
 	font-size: 2em;
 }
 
-#intro p {
-	text-align: justify;
-}
-
 #schedule {
 	margin: 2%;
 	font-size: 1.2em;
 	text-align: center;
+}
+
+/* Resources page content styles */
+.bookmarks {
+	margin: 15px;
+}
+
+.bookmarks ul {
+	box-sizing: border-box;
+	list-style-type: none;
+	text-align: center;
+}
+
+.bookmarks li {
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	padding: 0 7px;
+	border-right: 1px solid #000;
+}
+
+.bookmarks li:last-child {
+	border-right: none;
+}
+
+.bookmarks a {
+	font-size: 1.2em;
+	color: #000;
+}
+
+.bookmarks a:hover {
+	background-color: #000;
+	color: #fff;
+}
+
+.resource-heading {
+	font-size: 1.1em;
+	margin: 2%;
+}
+
+.resource-item {
+	margin: 2% 5%;
+}
+
+/* Contact page content styles */
+#contacts {
+	margin: 2% 15%;
+}
+
+#contacts p {
+	margin: 2%;
+	font-size: 1.2em;
 }
 
 /* Footer styles */
