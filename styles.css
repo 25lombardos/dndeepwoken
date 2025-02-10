@@ -202,6 +202,11 @@ main {
 	margin: 2% 5%;
 }
 
+.resource-item h3, .resource-heading h2 {
+	font-family: "Berkshire Swash";
+	font-weight: normal;
+}
+
 /* Contact page content styles */
 #contacts {
 	margin: 2% 15%;
